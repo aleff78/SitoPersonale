@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I miei viaggi</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0e4d7;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        .travel-section {
+            margin-top: 40px;
+        }
+
+        .travel-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .travel-content {
+            display: flex;
+            justify-content: space-between; /* Spazio tra testo e immagini */
+            align-items: flex-start;
+        }
+
+        .description-text {
+            width: 60%; /* Aggiungi spazio per il testo */
+            text-align: justify;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column; /* Disporre le immagini una sopra l'altra */
+            gap: 10px; /* Distanza tra le immagini */
+        }
+
+        .travel-section img {
+            max-width: 250px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .itinerary-list {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .itinerary-list li {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;  /* Link chiari per il contrasto */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I miei viaggi</h1>
+    </header>
+    <main>
+        <!-- Islanda -->
+        <div class="travel-section">
+            <h2>Islanda</h2>
+            <div class="travel-content">
+                <div class="description-text">
+                    <p>L'Islanda ha la natura più spettacolare che abbia mai visto. Ghiacciai, cascate, vulcani e gayser trasmettono la sensazione di un luogo in cui è ancora la natura a dominare, con l'uomo che resta solo una piccola parte di quel mondo incontaminato.</p>
+                    <h3>Itinerario</h3>
+                    <ol class="itinerary-list">
+                        <li>Visita di Reykjavik</li>
+                        <li>Viaggio itinerante di 15 gg lungo la Ring Road</li>
+                    </ol>
+                </div>
+                <div class="images">
+                    <img src="islanda1.jpg" alt="Immagine Islanda 1">
+                    <img src="islanda2.jpg" alt="Immagine Islanda 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Marocco -->
+        <div class="travel-section">
+            <h2>Marocco</h2>
+            <div class="travel-content">
+                <div class="description-text">
+                    <p>Il Marocco è un paese molto affascinante; naturalisticamente offre molti paesaggi cui non siamo abituati, a partire ovviamente da quelli del deserto del Sahara, di cui ospita solo una piccola parte.</p>
+                    <p>A stupire sono anche le persone del luogo: nelle città si respira un senso di comunità e di solidarietà raro alle nostre latitudini, ed è facile interagire e legare con gente del luogo in maniera autentica.</p>
+                    <h3>Itinerario</h3>                    
+                    <ol class="itinerary-list">
+                        <li>Visita alla città di Marrakech</li>
+                        <li>Visita ad Ait Benhaddou</li>
+                        <li>Escursione e notte nel Sahara</li>
+                        <li>Visita di Agadir</li>
+                    </ol>
+                </div>
+                <div class="images">
+                    <img src="marocco1.jpg" alt="Immagine Marocco 1">
+                    <img src="marocco2.jpg" alt="Immagine Marocco 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- America -->
+        <div class="travel-section">
+            <h2>USA</h2>
+            <div class="travel-content">
+                <div class="description-text">
+                    <p>Gli Stati Uniti sono un paese vastissimo di cui non ho visitato che una minima parte. Scelgo di includerli tra i viaggi più significativi per il fascino della città di New York, la cui vivacità e modernità sono irraggiungibili, e per l'esperienza nei parchi nazionali, con paesaggi mozzafiato e una natura incontaminata che ti fa sentire piccolo davanti alla sua grandezza.</p>
+                    <h3>Itinerario</h3>
+                    <ol class="itinerary-list">
+                        <li>Visita di New York</li>
+                        <li>Visita di Washington</li>
+                        <li>Overnight trips nei parchi nazionali di Yellowstone e Yosemite</li>
+                    </ol>
+                </div>
+                <div class="images">
+                    <img src="america1.jpg" alt="Immagine America 1">
+                    <img src="america2.jpg" alt="Immagine America 2">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../hobby/hobby.html">I miei hobby</a></li>
+            <li><a href="../amici/amici.html">I miei amici</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+

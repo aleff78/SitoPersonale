@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Profilo Personale</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0e4d7;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1, header h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .content {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; /* Allinea a sinistra */
+            align-items: center;
+        }
+
+        .content .description {
+            max-width: 70%;
+            text-align: justify;
+        }
+
+        .content img {
+            max-width: 250px;
+            border-radius: 10px;
+            margin-left: 20px; /* Aggiunta di spazio tra testo e immagine */
+        }
+
+        nav {
+            margin-top: 0px;
+            display: flex;
+            justify-content: center; /* Allinea i link a sinistra */
+            gap: 20px; /* Spazio tra i link */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+		nav ul li {
+   			display: inline-block;
+    		margin-right: 30px; /* Aggiungi uno spazio più ampio tra i link */
+}
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alessandro Ferrara</h1>
+        <h2>Profilo Personale</h2>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="description">
+                <p><strong>Benvenuto nel mio sito personale!</strong>. In questo spazio troverai informazioni sui miei hobby e sui viaggi più interessanti che ho fatto. Troverai inoltre una lista di amici, e potra richiedere di essere aggiunto compilando un apposito form. </p>
+
+                <p>Spero che gli spunti che troverai in queste pagine possano esserti di ispirazione!</p>
+            </div>
+            <img src="io.jpeg" alt="Foto Profilo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="hobby/hobby.html">I Miei Hobby</a></li>
+                <li><a href="viaggi/viaggi.html">I Miei Viaggi</a></li>
+                <li><a href="amici/amici.html">I Miei Amici</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
+

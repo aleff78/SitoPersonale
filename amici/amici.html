@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+    <title>I miei amici</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0e4d7;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color:  #e0c097;
+        }
+
+        form {
+            margin: 20px;
+            padding: 30px;
+            background-color: #e0c097;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        input, select {
+            margin: 5px 0 30px 0;
+            padding: 8px;
+            border-radius: 5px;
+            border: solid #333;
+        }
+
+		.inline-fields {
+    		display: flex;
+    		justify-content: space-between;
+ 
+    		width: 100%;
+		}
+
+
+        textarea {
+            margin: 5px 0 5px 0;
+            padding: 8px;
+            width: 100%;
+            resize: vertical;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I miei amici</h1>
+    </header>
+
+    <main>
+        <h2>Lista degli Amici</h2>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Email</th>
+                <th>Telefono</th>
+            </tr>
+            <tr>
+                <td>Marco</td>
+                <td>Rossi</td>
+                <td>marco.rossi@example.com</td>
+                <td>3451234567</td>
+            </tr>
+            <tr>
+                <td>Laura</td>
+                <td>Bianchi</td>
+                <td>laura.bianchi@example.com</td>
+                <td>3339876543</td>
+            </tr>
+            <tr>
+                <td>Giulia</td>
+                <td>Verdi</td>
+                <td>giulia.verdi@example.com</td>
+                <td>3491122334</td>
+            </tr>
+        </table>
+
+        <h2>Aggiungiti alla lista dei miei amici</h2>
+        <form action="null" method="post">
+			<label><strong>Info</strong></label>
+            <div class="inline-fields">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" id="cognome" name="cognome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                </div>
+            </div>
+
+            <label><strong>Quali sono i tuoi viaggi preferiti?</strong></label>
+            <div style="margin-bottom: 10px;">
+                <label ><input type="checkbox" name="interessi" value="musica"> Musica</label>
+                <label><input type="checkbox" name="interessi" value="lettura"> Lettura</label>
+                <label><input type="checkbox" name="interessi" value="sport"> Sport</label>
+                <label><input type="checkbox" name="interessi" value="viaggio"> Viaggio</label>
+            </div><br>
+
+            <label><strong>Ti piace viaggiare spesso?</strong></label>
+            <div style="margin-bottom: 10px;">
+                <label><input type="radio" name="frequenza" value="si" required> Sì</label>
+                <label><input type="radio" name="frequenza" value="no"> No</label>
+            </div>
+            
+            <label for="note"><strong>Note personali:</strong></label>
+            <textarea id="note" name="note" rows="4" placeholder="Scrivi qui qualcosa su di te..."></textarea>
+
+            <label for="eta"><strong>Età:</strong></label>
+            <input type="number" id="eta" name="eta" min="18" max="100" required>
+
+            <button type="submit">Invia</button>
+        </form>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../hobby/hobby.html">I miei hobby</a></li>
+                <li><a href="../viaggi/viaggi.html">I miei viaggi</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Personale</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0e4d7;
+        }
+
+        header {								 /* Nome pagina */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {								 /* Titolo principale */
+            font-size: 2.5em;
+        }
+
+        .hobby-section {
+            margin-top: 40px;
+        }
+
+        .hobby-section h2 {						 /* Titolo paragrafo */
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .hobby-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .hobby-section img {
+            max-width: 300px;
+            max-height: 300px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        .description-text {
+            width: 70%;
+            text-align: justify; /* Giustifica il testo */ 
+        }
+
+        .hobby-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .hobby-list li {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I miei hobby</h1>
+    </header>
+    <main>
+        <!-- Hiking -->
+        <div class="hobby-section">
+            <h2>Trekking</h2>
+            <div class="hobby-content">
+                <div class="description-text">
+                    <p>Il trekking offre l'opportunità di esplorare paesaggi spettacolari, respirare aria fresca e vivere la montagna in modo autentico, lontano dalla frenesia quotidiana. È un modo ideale per staccare dalla routine e godersi il contatto diretto con la natura.</p>
+					<p>Combinando esercizio fisico e relax, spesso mi dedico a uscite di un giorno. Quando ne ho la possibilità, però, mi piace anche trascorrere vacanze in quota, dormendo in tenda o nei rifugi, per avere esperienze più immersive e sfidanti.</p>
+                    <ul class="hobby-list">
+                        <li><strong>Attività principali:</strong> Escursioni in montagna, , campeggio.</li>
+                        <li><strong>Attrezzatura principale:</strong> Scarpe e abbigliamento tecnici, zaino, tenda, kit ferrata, kit campeggio.</li>
+                    </ul>
+                </div>
+                <img src="hiking.jpg" alt="Immagine Hiking">
+            </div>
+        </div>
+
+        <!-- Moto -->
+        <div class="hobby-section">
+            <h2>Moto</h2>
+            <div class="hobby-content">
+                <div class="description-text">
+                    <p>La moto offre una sensazione unica di libertà e avventura. Ogni viaggio, anche il più breve, permette di scoprire nuovi paesaggi e vivere l'emozione di essere in sintonia con la strada. È un modo per staccare dalla quotidianità e godersi il piacere della guida.</p>
+                    <p>Mi piace partire per vacanze in moto, esplorando posti sconosciuti e luoghi che spesso sfuggono ai turisti tradizionali, rendendo la strada stessa parte integrante della scoperta, con la sensazione che ogni curva nasconda una nuova sorpresa.</p>
+                    <ul class="hobby-list">
+                        <li><strong>Attività principali:</strong> Uscite domenicali, campeggio, vacanze in moto.</li>
+                        <li><strong>Attrezzatura:</strong> Stivali e abbigliamento tecnici, casco, protezioni.</li>
+                    </ul>
+                </div>
+                <img src="moto.jpg" alt="Immagine Moto">
+            </div>
+        </div>
+
+        <!-- Sci -->
+        <div class="hobby-section">
+            <h2>Sci</h2>
+            <div class="hobby-content">
+                <div class="description-text">
+                    <p>Lo sci è un’attività che permette di vivere la montagna, unendo esercizio fisico e piacere del contatto con la natura. La velocità e l’adrenalina delle discese rendono ogni momento emozionante, mentre la tecnica richiesta per affrontare le piste stimola costantemente a migliorarsi e a sfidare i propri limiti.</p>
+					<p>Durante l'inverno, provo ogni anno a organizzare una settimana bianca con gli amici. È l'occasione per esplorare nuovi comprensori sciistici, passare del tempo insieme e approfittare della tranquillità della montagna per godere appieno dell'esperienza.</p>                    
+					
+					<ul class="hobby-list">
+                        <li><strong>Attività principali:</strong> Sci alpino, escursioni sulla neve, giornate in montagna.</li>
+                        <li><strong>Attrezzatura:</strong> Sci, scarponi, casco e abbigliamento tecnico.</li>
+                    </ul>
+                </div>
+                <img src="sci.jpg" alt="Immagine Sci">
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../viaggi/viaggi.html">I miei viaggi</a></li>
+            <li><a href="../amici/amici.html">I miei amici</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
